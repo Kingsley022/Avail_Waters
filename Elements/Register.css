@@ -1,0 +1,44 @@
+.Registeration-form{
+    position: absolute;
+    /* top: 110%;
+    right: -110%; */
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background: rgb(245, 169, 169);
+    text-align: center;
+}
+
+.Registeration-form.active{
+    right: 2rem;
+    transition: 0.4s linear;
+}
+
+.Registeration-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.Registeration-form .box{
+    width: 100%;
+    margin: 0.7rem 0;   
+    background: #eee;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.Registeration-form p{
+    font-size: 1.4rem;
+    padding: 0.7rem 0;
+    color: var(--light-color);
+}
+
+.Registeration-form p a{
+    color: var(--orange);
+    text-decoration: underline;
+}

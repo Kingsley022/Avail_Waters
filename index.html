@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="./Global_images/logo.png" rel="shortcut icon">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    
+    <!-- HEADER SECTION STARTS -->
+
+    <header class="header">
+        <a href="#" class="logo"><img src="images/Avails002.png" style="height: auto;" width="100px"></i></a>
+
+        <nav class="navbar">
+            <a href="#Home" class='active'>Home</a>
+            <a href="#Services">Services</a>
+            <a href="#Reviews">Reviews</a>
+            <a href="#Blogs"></i>Blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn" aria-label="menu"></div>
+
+            <div class="fas fa-search" id="search-btn"><a>Search</a></div>
+
+            <div class="fas fa-shopping-cart" id="cart-btn">
+                <a href="./cart.html">Cart</a>
+                <sup>0</sup>
+            </div>
+
+            <div class="fas fa-user" id="login-btn"><a>Account</a></div>
+        </div>
+
+        <form action="#" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <form action="" class="login-form">
+            <h3>Login Now</h3>
+            <input type="email" placeholder="Enter your email" class="box">
+            <input type="password" placeholder="Enter your password" class="box">
+            <p>Forget password?<a href="">click here</a></p>
+            <p>Don't have an account?<a href="Registration.html">Create now</a></p>
+            <input type="Submit" value="login now" class="btn">
+        </form>
+
+    </header>
+     <!-- HEADER SECTION ENDS -->
+
+     
+         <div class="slider" id="Home">
+            <div class="triangle-topright"></div>
+
+             <div class="myslider fade" style="display: block;">
+                 <div class="txt">
+                    <h1><span class="lob">Avails</span>-Water</h1>
+                    <p>Water is Life<br>We supply Clean and treated<br> Which Should be should be a necessity.</p>
+                 </div>                 
+                 <div class="imgdiv">
+                    <img src="./images/water-tank-truck-2.png">
+                </div>
+             </div>
+
+
+             <div class="myslider fade">
+                <div class="txt">
+                   <h1>Home-Services</h1>
+                   <p>Giving the Best<br> We are here to give you the best<br> Home-Service with Time and Trust Efficient</p>
+                </div>
+                <div class="imgdiv">
+                    <img src="./images/multi_Tools.png">
+                </div>
+            </div>
+
+            <!-- <div class="myslider fade">             
+                <div class="txt">
+                   <h1>Avails-Drives</h1>
+                   <p>Web Developer<br>Subscribe to my channel for more videos</p>
+                </div>
+                <div class="imgdiv">
+                    <img src="./images/Drive01.png">
+                </div>
+                <div class="imgdiv2">
+                    <span class="fa solid fa-screwdriver-wrench"></span>
+                </div>
+            </div> -->
+
+            <div class="myslider fade">
+                <div class="txt">
+                   <h1>Get-Employed</h1>
+                   <p>Hiring Skilled workers<br>Pernality and Trust matters alot to us</p>
+                </div>
+                <div class="imgdiv">
+                    <img src="./images/employment.png">
+                </div> 
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+            <div class="dotsbox" style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <!-- <span class="dot" onclick="currentSlide(4)"></span> -->
+            </div>
+            <div class="triangle-bottomleft"></div>
+         </div>
+        
+    <!-- HOME SECTION ENDS -->
+
+    <!-- SERVICE SECTION STARTS here -->
+    <section class="services" id="Services">
+        <h1 class="heading">Our <span>Services</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="./images/water-tank-truck-2.png" alt="">
+                <h3>Water-supply</h3>
+                <!-- <p>upto 15% off</p> -->
+                <a href="#WaterSupply" class="btn">View More</a>
+            </div>
+
+            <div class="box">
+                <img src="./images/multi_Tools.png" alt="">
+                <h3>Home-services</h3>
+                <!-- <p>upto 15% off</p> -->
+                <a href="HomeService.html" class="btn">View More</a>
+            </div>
+
+            <!-- <div class="box">
+                <img src="./images/Drive.png" alt="">
+                <h3>Avails-Drive</h3>
+                <p>upto 15% off</p>
+                <a href='#AvailsDrive' id="Avails" class="btn">Order Now</a>
+            </div> -->
+
+            <div class="box">
+                <img src="./images/employment.png" alt="">
+                <h3>Get Employed</h3>
+                <!-- <p>Free</p> -->
+                <a href="./EmployMentForm.html" class="btn">Contact us now</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- SEEVICE SECTION ends here---------------------------------------------------- -->
+
+    <!-- WaterSupply SECTION STARTS==================================== -->
+
+    <section class="waterSupply" id="WaterSupply">
+
+        <h1 class="heading">Water<span>Supply</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./images/tank2.png" height="85px" width="85px" alt="" class="cart_Image">
+                <h3 class="cart_Title">Treated Water</h3>
+                <p>Be sure of the water you take.</p>
+                <div class="prize">&#8358;8500</div>
+                <div class="btn-container">
+                    <a href="#" class="cart-btn"> <i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                    <a href="CheckOut.html" class="btn"> <i class=""></i> Order Now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./images/tank2.png" height="85px" width="85px" alt="" class="cart_Image">
+                <h3 class="cart_Title">Normal Water</h3>
+                <p>Please note this water is That pure.</p>
+                <div class="prize">&#8358;8000</div>
+                <div class="btn-container">
+                    <a href="#" class="cart-btn"> <i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                    <a href="CheckOut.html" class="btn"> <i class=""></i> Order Now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./images/tank2.png" height="85px" width="85px" alt="" class="cart_Image">
+                <h3 class="cart_Title">Construction water</h3>
+                <p>Note only for Construction works.</p>
+                <div class="prize">&#8358;7200</div>
+                <div class="btn-container">
+                    <a href="#" class="cart-btn"> <i class="fas fa-shopping-cart"></i> Add To Cart</a>
+                    <a href="CheckOut.html" class="btn"> <i class=""></i> Order Now</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- --------------   WATER SUPPLY ENDS HERE --------------->
+
+    
+    <!-- HOME-SERVICE SECTION STARTS here -->
+    <section class="Home-services" id="#">
+        <h1 class="heading">Home <span>Services</span></h1>
+        
+        <div class="box-container">
+
+            <div class="box">
+                <img src="./images/contractor.png" alt="">
+                <h3>Electrician</h3>
+                <p>After Work payment</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+            <div class="box">
+                <img src="./images/contractor.png" alt="">
+                <h3>Electrician</h3>
+                <p>After Work payment</p>
+                <a href="#" class="btn">show now</a>
+            </div>
+
+            <div class="box">
+                <img src="./images/contractor.png" alt="">
+                <h3>Electrician</h3>
+                <p>upto 45% off</p>
+                <a href="#" class="btn">show now</a>
+            </div>
+
+            <div class="box">
+                <img src="./images/contractor.png" alt="">
+                <h3>Electrician</h3>
+                <p>After Work payment</p>
+                <a href="#" class="btn">show now</a>
+            </div>
+
+            <div class="box">
+                <img src="./images/contractor.png" alt="">
+                <h3>Electrician</h3>
+                <p>After Work payment</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+            <div class="box">
+                <img src="./images/contractor.png" alt="">
+                <h3>Electrician</h3>
+                <p>After Work payment</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+            <div class="box">
+                <img src="./images/contractor.png" alt="">
+                <h3>Electrician</h3>
+                <p>After Work payment</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+            <div class="box">
+                <img src="./images/contractor.png" alt="">
+                <h3>Electrician</h3>
+                <p>After Work payment</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>     
+        </div>
+
+        <div class="cnt">
+                <button class="btnn" float="right">View More</button>
+            </div> 
+    </section>
+
+
+    <!-- DRIVER SECTION STARTS HERE ========================================================================-->
+    <!-- <section class="Driver" id="AvailsDrive">
+
+        <h1 class="heading">Avails<span>Drive</span></h1>
+
+        <div class=" Driver_container">
+                    
+            <div class="Driver_box">
+                <img src="./Global_images/Driver.png" alt="">
+                <h3>Avails-Drive</h3>
+                <div class="prize">&#8358;300/km</div>
+                <a href="#" class="btn">Order Now</a>
+            </div>                   
+        </div>
+
+    </section> -->
+    <!-- ===================Driver SECTION Ends HERE -->
+
+
+    <!-- BLOGS BEGINS HERE =============---------------------------------------===================================== -->
+    <section class="blogs" id="Blogs">
+
+        <h1 class="heading">Our<span>Blogs</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="./images/images (4).jpeg">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> By user</a>
+                        <a href="#"> <i class="fas fa-calendar"></i> 1st may,2021</a>
+                    </div>
+                    <h3> The Water Blog</h3>
+                    <p>Global water security and sanitation partnership acceletating the Nigeria's effort to expand access Water in rural areas.</p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./images/multi_Tools3.jpg">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> By user</a>
+                        <a href="#"> <i class="fas fa-calendar"></i> 1st may,2021</a>
+                    </div>
+                    <h3>The Motive</h3>
+                    <p>Helping reduce the rate of unemploment in Nigeria is one of the greatest goal be achieved.</p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./images/images (5).jpeg">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> By user</a>
+                        <a href="#"> <i class="fas fa-calendar"></i> 1st may,2021</a>
+                    </div>
+                    <h3>The Water Blog</h3>
+                    <p>To accerate progress in rural sanitaion, we need subsidies to raech the poorest and most vulnerable.</p>
+                    <a href="#" class="btn">Read more</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+     <!-- BLOGS ends HERE =============---------------------------------------===================================== -->
+
+
+
+    <!-- FOOTER SECTION BEGINS========================================================================= -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="logo"><img src="images/Avails002.png" style="height: auto;" width="100px"></i></a>
+                <p>Follows us</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Contact-info</i></h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i>+234-912-913-1925</a>
+                <a href="#" class="links"> <i class="fas fa-phone"></i>+234-90-180-697-61</a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i>Avails@Avails.com</a>
+                <a href="#" class="links"> <i class="fas fa-map"></i>Enugu, Nigeria-410470</a>
+            </div>
+
+            <div class="box">
+                <h3>Quick links</i></h3>
+                <a href="#" id="Home" class="links"> <i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#" id="Services" class="links"> <i class="fas fa-arrow-right"></i>Services</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Review</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Blogs</a>
+            </div>
+
+            <div class="box">
+                <h3>Newslatters</i></h3>
+                <p>Subscribe for latest updates</p>
+                <input type="email" placeholder="Enter your Email address here" class="email">
+                <input type="submit" value="subscribe" class="btn">
+                <img src="../Classwork/imgs/google_icon.png" class="payment-img" alt="">
+            </div>
+        </div>
+
+        <div class="credit"> Created by <span>KvnGs Global</span> | All Right Reserved.</div>
+    </section>
+
+    <!-- FOOTER SECTION Ends========================================================================= -->
+
+
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="cart.js"></script>
+<script type="text/javascript" src="CheckOut.js"></script>
+</body>
+</html>

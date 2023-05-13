@@ -1,0 +1,222 @@
+:root{
+    --orange: #ff7800;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0.1);
+    --border:.2rem solid rgba(0,0,0.1);
+    --outline:.1rem solid rgba(0,0,0.1);
+    --outline-hover:.2rem solid var(--black);
+}
+
+.shopping-cart{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    width: 80%;
+    background: #fff;
+}
+
+.shopping-cart.active{
+    right: 2rem;
+    transition: 0.4s linear;
+}
+
+.shopping-cart .box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.shopping-cart .box img{
+    height: 10rem;
+}
+
+.shopping-cart .box .fa-trash{
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    cursor: pointer;
+    color:var(--light-color);
+    transform: translateY(-50%);
+}
+
+.shopping-cart .box .fa-trash:hover{
+    color: var(--orange);
+}
+
+.shopping-cart .box .content h3{
+    color: var(--black);
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.shopping-cart .box .content span{
+    color: var(--light-color);
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    right: 24rem;
+    font-size: 1.6rem;
+}
+
+.shopping-cart .box .content .prize{
+    position: absolute;
+    right: 40rem;
+}
+
+.shopping-cart .box .content .plus{
+    position: absolute;
+    text-align: center;
+    border-radius: 5px;
+    right: 15rem;
+    background: var(--orange);
+    color: #fff;
+    width: 20px;
+
+}
+
+.shopping-cart .box .content .minus{
+    position: absolute;
+    text-align: center;
+    border-radius: 5px;
+    right: 20rem;
+    background: var(--orange);
+    color: #fff;
+    width: 20px;
+}
+
+.shopping-cart .box .content .num{
+    position: absolute;
+    right: 18rem;
+}
+
+.shopping-cart .box .content .num{
+    padding-left: 1rem;
+}
+
+.shopping-cart .total{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--black);
+}
+
+/* .shopping-cart .checkOut-btn{
+    display: block;
+    text-align: center;
+    margin: 1rem;
+} */
+.checkOut-btn{
+    width: 100%;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+.checkOut-btn:hover{
+    background: #ff7800;
+    color: #eee;
+}
+
+
+@media (max-width:991px) {
+    .shopping-cart .box .content .prize{
+        right: 23.5rem;
+        padding-top: 1rem;
+    }
+    
+    .shopping-cart .box .content .plus{
+        right: 5rem;
+    }
+    
+    .shopping-cart .box .content .num{
+        right: 8.5rem;
+    }
+
+    .shopping-cart .box .content .minus{
+        right: 10rem;
+    }
+    
+    .shopping-cart .box .content .num{
+        padding-left: 1rem;
+    }
+    
+}
+
+@media (max-width:768px){
+
+    .shopping-cart .box .content h3{
+        font-size: 1.3rem;
+        
+    }    
+    .shopping-cart .box .content .prize{
+        right: 31.5rem;
+        padding-top: 1rem;
+    }
+    
+    .shopping-cart .box .content .plus{
+        font-size: 1rem;
+        width: 15px;
+        border-radius: 3px;
+    }
+
+    .shopping-cart .box .content .num{
+        right: 8rem;
+    }
+
+    .shopping-cart .box .content .minus{
+        font-size: 1rem;
+        width: 15px;
+        border-radius: 3px;
+    }
+    
+}
+@media (max-width:450px) {
+    .shopping-cart .box .content h3{
+        font-size: 1rem;
+        
+    }    
+    .shopping-cart .box .content .prize{
+        font-size: 1rem;
+        right: 12rem;
+        padding-top: 1rem;
+    }
+    
+    .shopping-cart .box .content .plus{
+        width: 10px;
+        font-size: 1rem;
+        border-radius: 3px;
+        right: 2rem;
+        top: 6rem;
+    }
+    
+    .shopping-cart .box .content .num{
+        font-size: 1rem;
+        right: 4rem;
+        top: 6rem;
+    }
+
+    .shopping-cart .box .content .minus{
+        width: 10px;
+        font-size: 1rem;
+        border-radius: 3px;
+        right: 5rem;
+        top: 6rem;
+    }
+
+    .shopping-cart .box .fa-trash{
+        font-size: 1rem;
+    }
+}

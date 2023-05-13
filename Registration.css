@@ -1,0 +1,303 @@
+:root{
+    --orange: #ff7800;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0.1);
+    --border:.2rem solid rgba(0,0,0.1);
+    --outline:.1rem solid rgba(0,0,0.1);
+    --outline-hover:.2rem solid var(--black);
+}
+
+*{
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(./images/background001.jpg);
+    padding: 0 10px;
+}
+
+.profileImage{
+    /* width: 100px;
+    height:auto;
+    font-size: bold; */
+    width: 100px;
+    background: black;
+    border-radius: 25px;
+    height: 45px;
+    width: 45px;
+}
+
+.wrapper{
+    max-width: 500px;
+    width: 100%;
+    background: rgba(255,255,255,0.5);
+    
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: var(--box-shadow);
+    border-radius: 15px;
+}
+
+.wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: var(--orange);
+    text-transform: capitalize;
+    text-align: right;
+}
+.wrapper .title span{
+    float: left;
+    /* color: var(--orange);
+    display: inline-block;
+    padding: 0 12rem 0 0; */
+}
+
+
+
+.wrapper .form{
+    width: 100%;
+}
+
+.wrapper .form .input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .form .input_field label{
+    width: 200px;
+    color: var(--light-color);
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.wrapper .form .input_field .input,
+.wrapper .form .input_field .textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* .wrapper .form .input_field .textarea{
+    resize: none;
+    height: 125px;
+} */
+
+.wrapper .form .input_field .custom_select{
+    position: relative;
+    width: 100%;
+    height: 37%;
+}
+
+.wrapper .form .input_field .custom_select select{
+    -webkit-appearance: none;    
+    appearance: none;
+    border: 1px solid #d5dbd9;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 3px;
+    outline: none;
+}
+
+.wrapper .form .input_field .custom_select select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 0;
+    border: 8px solid;
+}
+
+.wrapper .form .input_field .input:focus,
+.wrapper .form .input_field .textarea:focus,
+.wrapper .form .input_field select:focus{
+    border: 1px solid var(--orange);
+}
+
+.wrapper .form .input_field p{
+    font-size: 1rem;
+    padding: 0.7rem 0;
+    color: var(--light-color);
+}
+
+.wrapper .form .input_field p a{
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+
+.wrapper .form .input_field .check{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.wrapper .form .input_field .check input[type="checkbox"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.wrapper .form .input_field .check .checkmark{
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--orange);
+    display: block;
+    position: relative;
+    /* background: orangered; */
+}
+
+.wrapper .form .input_field .check .checkmark:before{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 5px;
+    height: 2px;
+    border: 2px solid;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+    display: none;
+}
+
+.wrapper .form .input_field .check input[type="checkbox"]:checked ~ .checkmark{
+    background: var(--orange);
+}
+
+.wrapper .form .input_field .check input[type="checkbox"]:checked ~ .checkmark:before{
+    display: block;
+}
+
+.wrapper .form .input_field .icon{
+    padding: 12px;
+    background: var(--orange);
+    color: #fff;
+    min-width: 50px;
+    text-align: center;
+}
+.wrapper .form .input_field .btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    /* border-radius: 0.5rem; */
+    border: 0.2rem solid var(--orange);
+    background: none;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.wrapper .form .input_field:last-child{
+    margin-bottom: 0
+}
+
+.wrapper .form .input_field .btn:hover{
+    background: var(--orange);
+    color: #eee;
+}
+.wrapper .form .horizontal{
+    width: 100%;
+    text-align: center;
+}
+.wrapper .form .horitontal{
+    width: 100%;
+    margin: .7em auto;
+    overflow: hidden;
+    text-align: center;
+    font-weight: 300;
+    color: rgb(151, 149, 149);
+}
+.horitontal:before, .horitontal:after{
+    content: "";
+    display: inline-block;
+    width: 50%;
+    margin: 0 0.5em 0 -55%;
+    vertical-align: middle;
+    border-bottom: 1px solid;
+}
+.horitontal:after{
+    margin: 0 -55% 0 .5em;
+}
+
+.wrapper .form .input_field .icon2{
+    padding: 11.9px;
+    background: #4267B2;
+    color: #fff;
+    min-width: 50px;
+    text-align: center;
+}
+.wrapper .form .input_field .btn2{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    /* border-radius: 0.5rem; */
+    border: 0.2rem solid #4267B2;
+    background: none;
+    color: var(--black);
+    cursor: pointer;
+}
+/* .wrapper .form .input_field:last-child{
+    margin-bottom: 0
+} */
+
+.wrapper .form .input_field .btn2:hover{
+    background: #4267B2;
+    color: #eee;
+}
+
+
+@media (max-width: 420px){
+    
+
+     .wrapper .title{
+        font-size: 13px;
+        font-weight: 700;  
+    }
+    
+    .wrapper .form .input_field p{
+        font-size: 0.7rem;
+        padding: 0.7rem 0;
+    }
+
+    body{
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    .wrapper .form .input_field .input,
+    .wrapper .form .input_field .textarea{ 
+        font-size:10px;
+    }
+    
+
+    
+    .wrapper .form .input_field .btn{
+        width: 100%;
+        padding: 10.9px 10px;
+        font-size: 10px;
+    }
+
+    .wrapper .form .input_field .btn2{
+        text-transform: lowercase;
+        width: 100%;
+        padding: 9.7px 10px;
+        font-size: 12px;
+    }
+
+    .wrapper .form .input_field label{
+        margin-bottom: 5px;
+    }
+
+
+    /* body{
+        background: var(--orange);
+    } */
+}

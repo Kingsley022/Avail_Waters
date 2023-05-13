@@ -1,0 +1,251 @@
+*{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+:root{
+    --orange: #ff7800;
+    --black: #130f40;
+    --black-variant: #677483;
+    --danger:#ff7782;
+    --primary: #c2c2ea;
+    --color-primary:rgb(140, 140, 239);
+    --success: #41f1b6;
+    --warning: #ffbb55;
+    --light-color: #666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0.1);
+    --box-shadow2:0 .5rem 1.5rem rgb(48, 47, 47);
+    --border:.2rem solid rgba(0,0,0.1);
+    --outline:.1rem solid rgba(0,0,0.1);
+    --outline-hover:.2rem solid var(--black);
+
+    --card-border-radius:2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+}
+.active{
+    background: #d4e0ee;
+}
+/* #orders.active,#personaldata.active,#address.active,#message.active{
+    background: #d4e0ee;
+} */
+.warning{
+    color: var(--orange);
+}
+body{
+    background: #d4e0ee;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.container h1{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    font-size: 25px;
+}
+
+.sidemenu{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    height: 80vh;
+    width: 25%;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 5px;
+}
+.sidemenu h2{
+    font-size: 20px;
+}
+.sidemenu a{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    color: var(--light-color);
+    font-size: 12px;
+    border-bottom: 1px solid #d4e0ee;
+    /* background: #d4e0ee; */
+    padding: 7px;
+}
+/* .sidemenu a.active{
+    background: #d4e0ee;
+} */
+.sidemenu a:last-child{
+    margin-top: 8rem;
+    border: none;
+}
+.sidemenu a span{
+    padding-right: 5px;
+}
+.sidemenu a:hover{
+    margin-left: 2.1rem;
+    color: var(--orange);
+    transition: all 300ms ease;
+    /* background: #d4e0ee; */
+}
+@media screen and (max-width: 481px) {
+
+    .container{
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .sidemenu{
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .main{
+        /* display: none; */
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        top: -80%;
+        padding-bottom: 0;
+        /* background: #fff; */
+        border-radius: 10px;
+    }
+    .main .orders{
+        margin-left: 2rem;
+        /* margin-top: 2rem; */
+        /* margin-bottom: 2rem;
+        padding-bottom: 2rem; */
+        width: 100%;
+    }
+    .main .orders table{
+        background:rgb(140, 140, 239);
+        margin-left: 0;
+        height: auto;
+        width: 0;
+        /* padding: 25px; */
+        /* background: rgb(220, 100, 100); */
+    }
+    
+    .orders.active,.personaldata.active,.address.active,.message.active{
+        display: block;
+        top: -20%;
+
+    }
+}
+
+/* --------------------------Sidemenu ends here */
+
+
+.main{
+    width: 60%;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    /* background: #fff; */
+    border-radius: 10px;
+}
+.main .orders{
+    margin-left: 2rem;
+    /* margin-top: 2rem; */
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 10px;
+    height: auto;
+    width: 90%;
+    background: #fff;
+    box-shadow: var(--box-shadow2)
+}
+.main .orders.active{
+    display: block;
+    transition: 3000ms ease;
+}
+
+.main .orders h2{
+    padding-top: 1rem;
+    margin-left: 2rem;
+    font-size: 18px;
+}
+.main .orders table{
+    margin-left: 2rem;
+    height: auto;
+    width: 80%;
+    padding: 25px;
+    /* background: rgb(220, 100, 100); */
+}
+.main table h2{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-size: 15px;
+}
+.main .orders table thead{
+    /* background:#666; */
+    width: 100%;
+    line-height: 2rem;
+    
+}
+
+.main .orders table thead tr th{
+    font-size: 18px;
+    text-align: left;
+}
+.main .orders table tbody{
+    margin-top: 2rem;
+    /* background:rgb(140, 140, 239); */
+    line-height: 4rem;
+    font-size: 10px;
+}
+.main .orders table tbody tr td{
+    border-bottom: 1px solid #d4e0ee;
+}
+/* TABLE SECTION ENDS HERE */
+
+
+.main .personaldata,.address,.message{
+    background: #fff;
+    height: auto;
+    width: 90%;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    padding-bottom: 2rem;
+    box-shadow: var(--box-shadow2)
+}
+.main .personaldata.active{
+    display: block;
+    transition: 3000ms ease;
+}
+
+.main .address.active{
+    display: block;
+    transition: 3000ms ease;
+}
+.main .message .active{
+    display: block;
+    transition: 3000ms ease;
+}
+.main .personaldata h2,.address h2,.message h2{
+    font-size: 18px;
+    margin-left: 2rem;
+    padding-top: 2rem;
+}
+.main .personaldata,.address,.message,.details{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    width: 80%;
+    color: var(--black-variant);
+    /* padding: 10px; */
+    /* background: #c2c2ea; */
+}
+.main .personaldata,.address,.message,.details, p{
+    padding: 5px;
+    font-size: 15px;
+}
+.orders,.personaldata,.address,.message{
+    display: none;
+}
